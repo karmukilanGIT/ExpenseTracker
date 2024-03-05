@@ -5,7 +5,7 @@
   "main": "indexs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node indexs.cjs"
+    "start": "node indexs.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,9 @@
     "nodemon": "^3.1.0"
   },
   "dependencies": {
-    "express": "^4.18.3"
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.0"
   }
 }
