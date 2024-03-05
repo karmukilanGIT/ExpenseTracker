@@ -9,7 +9,7 @@ async function connectdb(){
     try{
         await mongoose.connect('mongodb+srv://karmukilan:kar123@database.8i9i2d2.mongodb.net/expensetracker?retryWrites=true&w=majority&appName=database')
     console.log("DB CONNECTED")
-    const port=8000
+    const port=process.env.port || 8000
     app.listen(port,()=>{
     console.log(`listening on port ${port}`)
     })
